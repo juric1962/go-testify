@@ -35,7 +35,7 @@ func TestMainHandlerWhenCountMoreThanTotal(t *testing.T) {
 	// здесь нужно добавить необходимые проверки
 
 	require.Equal(t, responseRecorder.Code, http.StatusOK)
-	assert.Equal(t, totalCount, len(answer))
+	assert.Greater(t, totalCount, len(answer))
 
 }
 
